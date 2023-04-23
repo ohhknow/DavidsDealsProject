@@ -1,37 +1,136 @@
+
 <!doctype html>
 <head>
-    <title>CSS Grid Template 2</title>
+    <title>David's Deals</title>
+    <link rel="shortcut icon" type="image/png" href="images/home-favicon.png">
     <link rel="stylesheet" href="home.css" type="text/css">
+    <link rel="stylesheet" href="universal.css" type="text/css">
+
+    <!-- Font for title-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
+
+    <!-- Font for schedule-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
 </head>
-    <body>
-    <header id="pageHeader"><h2 style="margin: 0px;">DAVID'S DEALS</h2></header>
+<body>
+    <header id="pageHeader"><h2 style="margin-top: -20px;">DAVID'S DEALS</h2></header>
     <article id="mainArticle">
-        <h1>We are open!</h1><br>
-        Located at
-        2515 E Clairemont Ave, 54701, Eau Claire, WI<br>
-        <img src="images/f37599a3250341ebb244554882b84860.jpg" alt="store" width="500">
-        <h1>DAILY DEALS</h1>
-        Come shop with us! You can always expect great and new surprises every week!<br>
-        Our collections are carefully selected.<br>
-        Browse through our products in house and experience shopping the David's Deals way for yourself!<br>
+        <h1>We are open!</h1>
+        <p>Welcome to David's Deals!</p>
+        <p>We welcome everybody with a smile</p>
+        <p>We sell many different products and have great deals!</p>
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <img src="images/guy-writing.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="images/girl-holding-vase.jpg" style="width:92%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="images/people-looking-window.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/girl-with-bag.jpg" style="width:100%">
+              </div>
+
+              <div class="mySlides fade">
+                <img src="images/plant.jpg" style="width:100%">
+              </div>
+
+            <div style="text-align:center">
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+            </div>  
+        </div>
+
+        <h1>Daily Deals</h1>
+          <p>
+            Come shop with us! You can always expect great and new surprises every week!
+          </p>
+          <p>
+            Our collections are carefully selected
+          </p>
+          <p>
+            Browse through our products in house and experience shopping the David's Deals way for yourself!
+          </p>
+
+        <script>
+            let slideIndex = 0;
+            showSlides();
+            
+            function showSlides() {
+              let i;
+              let slides = document.getElementsByClassName("mySlides");
+              let dots = document.getElementsByClassName("dot");
+              for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+              }
+              slideIndex++;
+              if (slideIndex > slides.length) {slideIndex = 1}    
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+              setTimeout(showSlides, 4500); // Change image every 2 seconds
+            }
+            </script>
     </article>
     <nav id="mainNav">  
-        <a href="home.html">Home</a><br>
-        <a href="faq.html">FAQ</a><br>
+        <a href="home.html">Home</a>
+        <br>
+        <a href="shop.html">Shop</a>
+        <br>
+        <a href="location.html">Location</a>
+        <br>
+        <a href="faq.html">FAQ</a>
+        <br>
         <a href="contact.html">Contact</a>
+        
     </nav>
     <div>
         <nav>
     </div>
 
     <div id="siteAds">
-        Weekly Schedule <br><br>
-        Store prices go down each day! <br><br>
-        Friday $9 <br><hr> Saturday $7  <br><hr>Sunday $5 <br><hr> Monday $3 <br><hr> Tuesday $1</div>
-    <footer id="pageFooter">
+        <div class="border">
+          Weekly Schedule 
+          <br><br>
+          Store prices go down each day! 
+          <br><br>
+          Friday $9 
+          <br><hr> 
+          Saturday $7  
+          <br><hr>
+          Sunday $5 
+          <br><hr> 
+          Monday $3 
+          <br><hr> 
+          Tuesday $1
+        </div>
+      </div>
+    <div id="pageFooter">
+        <br>
+        <br>
+        <br>
         Open Hours are 12pm-7pm: Monday, Tuesday, Friday, Saturday and Sunday<br>
         <hr>
         2515 E Clairemont Ave, 54701, Eau Claire, WI<br>
         <hr>
-        ©2022 by David's Deals.</footer>
+        ©2022 by David's Deals.
+        <hr>
+        (715)-864-7696
+    </div>
 </body>

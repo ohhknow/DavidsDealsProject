@@ -1,0 +1,161 @@
+#shop-images > .shoes{
+    margin: 0 20px 20px 0;
+    transition: transform .2s;
+    border: outset;
+    border-color: black;
+    border-width: 10px;
+}
+  
+#shop-images > .glasses{
+    margin: 0 20px 20px 20px;
+    transition: transform .2s;
+    border: outset;
+    border-color: black;
+    border-width: 10px;
+}
+  
+#shop-images > .watch{
+    margin: 0 20px 20px 20px;
+    transition: transform .2s;
+    border: outset;
+    border-color: black;
+    border-width: 10px;
+}
+  
+#shop-images > .hoodie{
+    margin: 0 0 20px 20px;
+    transition: transform .2s;
+    border: outset;
+    border-color: black;
+    border-width: 10px;
+}
+  
+#shop-images > .cactus{
+    margin: 20px 20px 0 0;
+    transition: transform .2s;
+    border: outset;
+    border-color: black;
+    border-width: 10px;
+}
+  
+#shop-images > .picture-frame{
+    margin: 20px 20px 0 20px;
+    transition: transform .2s;
+    border: outset;
+    border-color: black;
+    border-width: 10px;
+}
+  
+#shop-images > .cologne{
+    margin: 20px 20px 0 20px;
+    transition: transform .2s;
+    border: outset;
+    border-color: black;
+    border-width: 10px;
+}
+  
+#shop-images > .scarf{
+    margin: 20px 0 0 20px;
+    transition: transform .2s;
+    border: outset;
+    border-color: black;
+    border-width: 10px;
+}
+  
+#shop-images > .lamp{
+    margin: 20px 20px 20px 0;
+    transition: transform .2s;
+    border: outset;
+    border-color: black;
+    border-width: 10px;
+}
+  
+#shop-images > .makeup{
+    margin: 20px 20px 20px 20px;
+    transition: transform .2s;
+    border: outset;
+    border-color: black;
+    border-width: 10px;
+}
+  
+#shop-images > .bowl{
+    margin: 20px 20px 20px 20px;
+    transition: transform .2s;
+    border: outset;
+    border-color: black;
+    border-width: 10px;
+}
+  
+#shop-images > .backpack{
+    margin: 20px 0 20px 20px;
+    transition: transform .2s;
+    border: outset;
+    border-color: black;
+    border-width: 10px;
+}
+  
+.shoes:active, .glasses:active, .watch:active, .hoodie:active, .cactus:active, .picture-frame:active, .cologne:active, .scarf:active,
+.lamp:active, .makeup:active, .bowl:active, .backpack:active{
+    transform: scale(1.3);
+}
+  
+.shoes-word {
+    float: left;
+    margin: -50px 0 0 20px;
+}
+  
+.glasses-word {
+    display: left;
+    margin: -50px 505px 0 20px;
+}
+  
+.watch-word {
+    display: right;
+    margin: -60px 20px 0 132px;
+}
+  
+.hoodie-word {
+    float: right;
+    margin: -60px 207px 0 20px
+}
+  
+.cactus-word {
+    float: left;
+    margin: -33px 0 0 20px;
+}
+  
+.frames-word {
+    display: left;
+    margin: -33px 513px 0 0;
+}
+  
+.cologne-word {
+    display: right;
+    margin: -60px 10px 0 117px;
+}
+  
+.scarf-word {
+    float: right;
+    margin: -60px 222px 0 20px
+}
+  
+.lamp-word {
+    float: left;
+    margin: -55px 0 0 20px;
+}
+  
+.makeup-word {
+    display: left;
+    margin: -55px 485px 0 0;
+}
+  
+.bowl-word {
+    display: right;
+    margin: -60px 10px 0 145px;
+}
+  
+.backpack-word {
+    float: right;
+    margin: -58px 188px 0 20px
+}
+
