@@ -7,7 +7,26 @@
     <body>
     <header id="pageHeader"><h2>DAVID'S DEALS</h2></header>
     <article id="mainArticle">
-        Article
+    <h3>Wholesale Orders</h3>
+    <p>We offer discounts for bulk orders. To place a wholesale order, please fill out the form below and we'll get back to you within 2-3 business days:</p>
+    <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="phone">Phone:</label><br>
+        <input type="tel" id="phone" name="phone" required><br>
+
+        <label for="quantity">Quantity:</label><br>
+        <input type="number" id="quantity" name="quantity" min="1" required><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message"></textarea><br>
+
+        <input type="submit" value="Submit">
+    </form>
     </article>
     <nav id="mainNav">  
         <a href="home.html">Home</a><br>
