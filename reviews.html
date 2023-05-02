@@ -6,7 +6,30 @@
     <body>
     <header id="pageHeader"><h2>DAVID'S DEALS</h2></header>
     <article id="mainArticle">
-        Article
+    <div id="reviewForm">
+        <h3>Leave a Review</h3>
+        <form action="" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"><br>
+
+            <label for="rating">Rating:</label><br>
+            <select id="rating" name="rating">
+                <option value="5">5 stars</option>
+                <option value="4">4 stars</option>
+                <option value="3">3 stars</option>
+                <option value="2">2 stars</option>
+                <option value="1">1 star</option>
+            </select><br>
+
+            <label for="comment">Comment:</label><br>
+            <textarea id="comment" name="comment"></textarea><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
     </article>
     <nav id="mainNav">  
         <a href="home.html">Home</a><br>
