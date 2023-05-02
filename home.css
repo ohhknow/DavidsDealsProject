@@ -16,11 +16,15 @@ body {
 header, footer, article, nav, div {
     padding: 1.2em;
 }
-a{
-    color: black;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 25px;
-    
+
+a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #666;
 }
 
 header {
@@ -49,6 +53,13 @@ article {
 
 #mainNav { 
     grid-area: nav; 
+    background-color: #f1f1f1;
+    padding: 1em;
+}
+
+#mainNav a {
+    display: block;
+    margin-bottom: 0.5em;
 }
 
 #siteAds { 
