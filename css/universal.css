@@ -1,7 +1,8 @@
+/* Default styles */
 body {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   display: grid;
-  grid-template-areas: 
+  grid-template-areas:
       "header header header"
       "nav article ads"
       "footer footer footer";
@@ -40,7 +41,7 @@ p{
 
 header {
   /* background-color: #77797a; */
-  background-color: #4C5B61;
+  background-color: #a8f9ff;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   align-items: center;
   position: fixed;
@@ -51,7 +52,7 @@ header {
 }
 
 article {
-  background-color: #c5c5c5;
+  background-color: #e1f2fe;
 }
 
 #pageHeader {
@@ -61,9 +62,14 @@ article {
   font-size: 30px;
 }
 
+.image-header{
+  float: right;
+  margin-bottom: 30px;
+}
+
 #pageFooter {
   grid-area: footer;
-  background-color: #c5c5c5;
+  background-color: #e1f2fe;
   width: 100%;
   height:300%;
   clear: both;
@@ -72,20 +78,20 @@ article {
   text-align: center;
 }
 
-#mainArticle { 
-  grid-area: article; 
-  text-align: center;     
+#mainArticle {
+  grid-area: article;
+  text-align: center;    
 }
 
-#mainNav { 
-  grid-area: nav; 
+#mainNav {
+  grid-area: nav;
   font-weight: 700;
-  background-color: #c5c5c5;
+  background-color: #e1f2fe;
   margin-top: 10px;
 }
 
 #mainNav a{
-  background-color: #829191;
+  background-color: #4cd7e0;
   border-radius: 30px;
   border: none;
   color: black;
@@ -104,10 +110,10 @@ article {
   background-color: #4C5B61;
 }
 
-#siteAds { 
+#siteAds {
   grid-area: ads;
   text-align: center;
-  background-color: #c5c5c5;
+  background-color: #e1f2fe;
   margin-top: 10px;
   font-family: 'Caveat', cursive;
   font-size: 25px;
@@ -126,18 +132,89 @@ article {
   border-style: solid;
 }
 
+
+
 /* Stack the layout on small devices/viewports. */
-@media all and (max-width: 575px) {
-  body { 
-      grid-template-areas: 
+@media all and (max-width: 1200px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    grid-template-areas:
       "header"
       "nav"
       "article"
       "ads"
       "footer";
-      grid-template-rows: 80px 1fr 70px 1fr 70px;  
-      grid-template-columns: 1fr;
+    grid-template-rows: 80px 1fr 70px auto auto;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+    margin: 0;
+    padding: 0;
   }
+ 
+  header, nav, article, ads, footer {
+    width: 100%;
+    margin: 0;
+    padding: 1.2em;
+  }
+
+  header {
+    height: auto;
+    position: static;
+  }
+
+  #mainArticle{
+    margin-top: -10px;
+  }
+
+  #mainNav a {
+    width: 100%;
+    font-size: 30px;
+  }
+
+  #siteAds {
+    font-size: 20px;
+    margin-top: -100px;
+    font-size: 30px;
+  }
+
+  /* Set a higher z-index value for nav */
+  #mainNav {
+    z-index: 1;
+    margin-top: -10px;
+  }
+
+  /* Set a lower z-index value for article */
+  article {
+    z-index: 0;
+  }
+
+  #pageHeader {
+    font-size: 30px;
+    text-align: center;
+    height: 10%;
+  }
+
+  #pageFooter{
+    margin-top: -10px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, sans-serif;
+}
+
+.mySlides {
+  display: none;
+}
+
+img {
+  vertical-align: middle;
 }
 
 * {

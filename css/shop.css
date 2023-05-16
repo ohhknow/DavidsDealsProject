@@ -159,3 +159,10 @@
     margin: -58px 188px 0 20px
 }
 
+.image-link{
+    margin: 0 20px 20px 0;
+    transition: transform .2s;
+    border: outset;
+    border-color: black;
+    border-width: 10px;
+}

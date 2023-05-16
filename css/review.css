@@ -1,0 +1,79 @@
+input{
+    margin: 10px;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+    font-size: 30px;
+}
+  
+#review-name, #rating{
+    width: 365px;
+}
+  
+#reasons{
+    font-size: 30px; 
+    width: 763px; 
+    height: 400px;
+    font-family: 'Edu NSW ACT Foundation', cursive;
+}
+  
+#submit{
+    background-color: black;
+    color: white;
+}
+  
+input:hover[type=text]{
+    background-color: rgb(236, 233, 233);
+}
+  
+#reasons:hover{
+    background-color: rgb(236, 233, 233);
+}
+  
+#submit:hover{
+    background-color: white;
+    color: black;
+}
+
+.reviews {
+  margin-bottom: 10px;
+  border: 1px solid black;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  margin: 10px;
+  height: 300px;
+  width: 200px;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+  
+.reviews p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+  
+.reviews strong {
+    font-weight: bold;
+}
+
+/* Style the select element */
+select {
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 3px;
+    color: #555;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    max-width: 200px;
+  }
+  
+  /* Style the options */
+  option {
+    background-color: #fff;
+    color: #555;
+  }
+
+  .rating-title{
+    margin-left: -10px;
+  }
+  

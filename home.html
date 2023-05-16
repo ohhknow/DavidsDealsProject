@@ -1,10 +1,13 @@
 
 <!doctype html>
 <head>
+    <meta charset="UTF-8">
     <title>David's Deals</title>
     <link rel="shortcut icon" type="image/png" href="images/home-favicon.png">
-    <link rel="stylesheet" href="home.css" type="text/css">
-    <link rel="stylesheet" href="universal.css" type="text/css">
+    <link rel="stylesheet" href="css/home.css" type="text/css">
+    <link rel="stylesheet" href="css/universal.css" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="src/normal.css" type="text/css">
 
     <!-- Font for title-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +20,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header id="pageHeader"><h2 style="margin-top: -20px;">DAVID'S DEALS</h2></header>
+  <header id="pageHeader">
+    <h2 style="margin-top: -20px;">DAVID'S DEALS</h2>
+    <div class="navbar">
+
+      <a href="cart.html">
+      <div class="cart">
+          <i class="bi bi-cart2"></i>
+          <div id="cartAmount" class="cartAmount">0</div>
+      </div>
+      </a>
+  </div>
+  </header>
+  <nav id="mainNav">  
+    <a href="home.html">Home</a>
+    <br>
+    <a href="index.html">Shop</a>
+    <br>
+    <a href="location.html">Location</a>
+    <br>
+    <a href="faq.html">FAQ</a>
+    <br>
+    <a href="contact.html">Contact</a>
+    <br>
+    <a href="review_page.php">Review</a>
+  </nav>
     <article id="mainArticle">
         <h1>We are open!</h1>
         <p>Welcome to David's Deals!</p>
@@ -84,22 +111,10 @@
               }
               slides[slideIndex-1].style.display = "block";  
               dots[slideIndex-1].className += " active";
-              setTimeout(showSlides, 4500); // Change image every 2 seconds
+              setTimeout(showSlides, 5000); // Change image every 2 seconds
             }
             </script>
     </article>
-    <nav id="mainNav">  
-        <a href="home.html">Home</a>
-        <br>
-        <a href="shop.html">Shop</a>
-        <br>
-        <a href="location.html">Location</a>
-        <br>
-        <a href="faq.html">FAQ</a>
-        <br>
-        <a href="contact.html">Contact</a>
-        
-    </nav>
     <div>
         <nav>
     </div>
@@ -134,3 +149,5 @@
         (715)-864-7696
     </div>
 </body>
+<script src="src/Data.js"></script>
+<script src="src/cart.js"></script>
