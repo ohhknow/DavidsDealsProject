@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
 	<title>Review | David's Deals</title>
@@ -77,9 +77,6 @@
 		<h2>Reviews</h2>
 		<?php include 'display_review.php'; ?>
 	</article>
-    <div>
-        <nav>
-    </div>
 
     <div id="siteAds">
         <div class="border">
@@ -110,7 +107,7 @@
         <hr>
         (715)-864-7696
     </div>
+    <script src="src/Data.js"></script>
+    <script src="src/cart.js"></script>
 </body>
-<script src="src/Data.js"></script>
-<script src="src/cart.js"></script>
 </html>

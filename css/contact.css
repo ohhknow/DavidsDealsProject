@@ -31,3 +31,7 @@ input:hover[type=text]{
     background-color: white;
     color: black;
 }
+
+.contact-image{
+    width: 100%;
+}
